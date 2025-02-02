@@ -72,10 +72,9 @@ body {
 }
 
 .signal-container img {
-    max-width: 100%;
-    height: auto;
-    width: 58%;
-    border-radius: 8px;
+    width: 105px; /* Установите фиксированную ширину */
+    height: auto; /* Сохраняет соотношение сторон */
+    border-radius: 11px;
     opacity: 1;
     transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -264,4 +263,9 @@ body {
     position: absolute;
     width: 60px;
     left: 70%;
+}
+
+.fade-out {
+    opacity: 0; /* Прозрачность */
+    transition: opacity 2s ease; /* Переход для прозрачности */
 }
