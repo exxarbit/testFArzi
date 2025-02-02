@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: sans-serif;
-    color: white; /* Цвет текста для контраста */
+    color: white;
 }
 
 .container {
@@ -77,8 +77,8 @@ body {
     width: 50%;
     border-radius: 8px;
     opacity: 1;
-    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease; /* Добавлено box-shadow */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Тень вокруг изображения */
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .fade-out {
@@ -89,7 +89,7 @@ body {
 .fade-in {
     opacity: 0;
     transform: scale(0.8);
-    animation: fadeIn 0.5s forwards; /* Задайте продолжительность */
+    animation: fadeIn 0.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -171,6 +171,7 @@ body {
 .message-fade-in {
     opacity: 0;
     animation: messageFadeIn 0.5s forwards;
+    margin-top: -20px;
 }
 
 @keyframes messageFadeIn {
@@ -183,13 +184,13 @@ body {
 }
 
 .round-container {
-    position: relative; /* Позволяет дочерним элементам использовать абсолютное позиционирование относительно этого контейнера */
-    width: 300px; /* Задайте фиксированную ширину, если нужно */
-    height: 300px; /* Задайте фиксированную высоту, чтобы сохранить круглый вид */
-    overflow: hidden; /* Обрезаем содержимое, которое выходит за пределы круга */
-    display: flex; /* Центрируем содержимое */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes spinLeftRight {
@@ -197,23 +198,23 @@ body {
         transform: rotate(0deg);
     }
     25% {
-        transform: rotate(-10deg); /* Поворот влево */
+        transform: rotate(-10deg);
     }
     50% {
-        transform: rotate(0deg); /* Возвращение в центр */
+        transform: rotate(0deg);
     }
     75% {
-        transform: rotate(10deg); /* Поворот вправо */
+        transform: rotate(10deg);
     }
     100% {
-        transform: rotate(0deg); /* Возвращение в центр */
+        transform: rotate(0deg);
     }
 }
 
 .wheel-image {
-    width: 100%; /* Адаптивная ширина для изображения */
-    height: auto; /* Сохранение пропорций */
-    animation: spinLeftRight 6s ease-in-out infinite; /* Анимация вращения */
+    width: 100%;
+    height: auto;
+    animation: spinLeftRight 6s ease-in-out infinite;
 }
 
 .wheel-image::after {
@@ -223,34 +224,33 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 50%; /* Сделаем окружность */
-    box-shadow: 0 0 20px rgba(252, 252, 248, 0.7), /* Сияние желтого цвета */
-                0 0 40px rgba(255, 255, 255, 0.5); /* Более размытое сияние */
-    pointer-events: none; /* Чтобы события мыши не мешали взаимодействию с изображением */
-    z-index: -1; /* Псевдоэлемент будет ниже изображения */
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(252, 252, 248, 0.7),
+                0 0 40px rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    z-index: -1;
 }
 
 .signal-container {
-    position: absolute; /* Абсолютное позиционирование */
-    top: 50%; /* Центрируем по вертикали */
-    left: 50%; /* Центрируем по горизонтали */
-    transform: translate(-50%, -50%); /* Сдвигаем в центр */
-    display: flex; /* Для размещения изображений сигналов в строку */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .message-container {
-    position: absolute; /* Позволяет позиционировать сообщение относительно родительского элемента */
-    top: 1;
+    position: absolute;
+    top: 150px;
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;/* Расстояние от верхней части окна */
-    left: 50%; /* Центрируем по горизонтали */
-    transform: translateX(-50%); /* Сдвигаем в центр */
-    color: blue; /* Цвет текста */
-    font-weight: bold; /* Жирный текст */
-    text-align: center; /* Центрирование текста */
-    z-index: 10; /* Выше остальных элементов */
+    font-family: 'Montserrat', sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+    color: blue;
+    text-align: center;
+    z-index: 10;
 }
 
 
