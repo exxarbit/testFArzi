@@ -74,7 +74,7 @@ body {
 .signal-container img {
     max-width: 100%;
     height: auto;
-    width: 50%;
+    width: 58%;
     border-radius: 8px;
     opacity: 1;
     transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
@@ -212,7 +212,7 @@ body {
 }
 
 .wheel-image {
-    width: 100%;
+    width: 113%;
     height: auto;
     animation: spinLeftRight 6s ease-in-out infinite;
 }
@@ -248,7 +248,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     left: 50%;
     transform: translateX(-50%);
-    color: blue;
+    color: #785bf7; /* Цвет кнопки */
     text-align: center;
     z-index: 10;
 }
